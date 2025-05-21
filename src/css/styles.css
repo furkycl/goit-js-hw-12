@@ -16,3 +16,124 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #6c8cff;
+}
+
+#loader {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid;
+}
+
+.gallery img {
+  width: 360px;
+  height: 200px;
+  display: block;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.photo-card {
+  border: 1px solid #000000;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s;
+}
+
+.photo-card:hover {
+  transform: scale(1.02);
+}
+
+.photo-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-card .info {
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
+
+#load-more-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#load-more {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4e75ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#load-more:hover {
+  background-color: #3b5be0;
+}
+
+.loader {
+  margin-top: 10px;
+}

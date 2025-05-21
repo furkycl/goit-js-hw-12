@@ -16,13 +16,30 @@
 
     <main>
       <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
+        <form id="search-form">
+          <input
+            type="text"
+            name="searchQuery"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button type="submit">Search</button>
+        </form>
+
+        <div id="loader" class="loader hidden">
+          Loading images, please wait...
+        </div>
+
+        <div class="gallery"></div>
+        <div id="load-more-container" class="hidden">
+          <button id="load-more">Load more</button>
+          <div id="loader" class="loader hidden"></div>
+        </div>
         <load src="./partials/back-link.html" />
       </div>
     </main>
 
     <load src="./partials/footer.html" />
+    <script type="module" src="./searchimages.js"></script>
   </body>
 </html>
